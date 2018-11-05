@@ -1,0 +1,27 @@
+Tiny McCarty-style Lisp
+
+In 1985 I tried writing my own Lisp, but the project detailed for
+non-technical reasons.
+
+I found the cute little kernel of it closely as possible to the
+original definition in John McCarty's book [1], page 13 of an
+additional tweak by Paul Graham [2] but I was surprised to not be able
+to find a C version of this. This felt like a good Sunday project so
+here's it is.
+
+Since I had it working I went ahead an added CDR-coding (an
+underappreciate marvel).
+
+Note, to make this useful risk harming the readability of this and
+it's small size, but it certainly needs:
+- Pervasive checking, stack overflow, etc
+- Support for integers and strings
+- Better support for adding symbols
+- garbage collection, which probably requires ..
+- ... coding the interpreter as a state machine to we can get the
+  roots.
+- Incremental/Real-time GC (Baker-style)
+- Static scoping
+
+[1] http://www.softwarepreservation.org/projects/LISP/book/LISP%201.5%20Programmers%20Manual.pdf
+[2] https://programmingpraxis.com/2011/11/01/rip-john-mccarthy/2/
