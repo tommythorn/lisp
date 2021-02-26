@@ -14,30 +14,6 @@
  *  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
  *  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  *  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- *
- *
- * In 1985 I tried writing my own Lisp, but the project detailed for
- * non-technical reasons.  This felt like a good Sunday project so
- * here's a cute little kernel of it closely as possible to the
- * original definition in John McCarty's book, page 13 of
- * http://www.softwarepreservation.org/projects/LISP/book/LISP%201.5%20Programmers%20Manual.pdf
- * an additional tweak by Paul Graham.
- *
- * Since I had it working I went ahead an added CDR-coding (an
- * underappreciate marvel).
- *
- * Note, to make this useful risk harming the readability of this and
- * it's small size, but it certainly needs:
- * - Pervasive checking, stack overflow, etc
- * - Support for integers and strings
- * - Better support for adding symbols
- * - garbage collection, which probably requires ..
- * - ... coding the interpreter as a state machine to we can get the
- *   roots.
- * - Incremental/Real-time GC (Baker-style)
- * - Static scoping
- *
- * PS: Yes, the coding style here is unusual, even for me.  Whatever.
  */
 
 #include <assert.h>
